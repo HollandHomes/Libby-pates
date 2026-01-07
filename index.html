@@ -34,6 +34,7 @@
             body { background: white; padding: 0; }
             .proposal-card { box-shadow: none; border: none; width: 100%; max-width: 100%; }
             .page-break { page-break-before: always; }
+            .instruction-box { display: none !important; }
         }
     </style>
 </head>
@@ -166,6 +167,10 @@
                     </div>
                     <div class="flex gap-3">
                         <span class="text-indigo-600 font-bold">•</span>
+                        <p><strong>Tile Protection:</strong> Every effort will be made to avoid damage to existing wall/floor tile and to butt the new shower unit to existing tile. However, if incidental damage occurs during demolition or install, any necessary tile repair/replacement is excluded from this quote.</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="text-indigo-600 font-bold">•</span>
                         <p><strong>Exclusions:</strong> Structural rot repair, electrical upgrades, or remediation of pre-existing sub-code conditions.</p>
                     </div>
                     <div class="flex gap-3">
@@ -183,7 +188,7 @@
             <section class="mb-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div>
-                        <h4 class="text-xs uppercase font-bold text-slate-400 mb-4 tracking-widest">Client Acceptance Signature</h4>
+                        <h4 class="text-xs uppercase font-bold text-slate-400 mb-4 tracking-widest">Contractor Signature</h4>
                         <canvas id="sig-pad" width="400" height="140" class="w-full"></canvas>
                         <div class="mt-3 flex justify-between">
                             <button onclick="clearSig()" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors no-print">Clear Signature</button>
@@ -191,9 +196,20 @@
                         </div>
                     </div>
                     <div class="flex flex-col justify-end">
-                        <div class="border-b-2 border-slate-200 pb-2 mb-6 text-slate-400 italic text-sm">Libby Pates - Print Name</div>
+                        <div class="border-b-2 border-slate-200 pb-2 mb-6 text-slate-400 italic text-sm">Authorized Contractor - Print Name</div>
                         <div class="border-b-2 border-slate-200 pb-2 text-slate-400 italic text-sm">Date Signed</div>
                     </div>
+                </div>
+
+                <!-- Submission Instructions -->
+                <div class="mt-12 bg-slate-50 p-6 rounded-2xl border border-dashed border-slate-300 instruction-box">
+                    <h4 class="text-sm font-bold text-slate-700 mb-3 uppercase tracking-widest">How to return this signed contract:</h4>
+                    <ol class="text-sm text-slate-600 list-decimal ml-5 space-y-2">
+                        <li><strong>Sign Above:</strong> Use your mouse or touch screen to sign the box above.</li>
+                        <li><strong>Generate PDF:</strong> Click the indigo <strong>"Download PDF / Print Proposal"</strong> button at the bottom of the page.</li>
+                        <li><strong>Save as PDF:</strong> In the print preview window, change the "Destination" to <strong>"Save as PDF"</strong> or <strong>"Print to PDF"</strong>.</li>
+                        <li><strong>Return via Email:</strong> Attach the saved PDF and email it to <a href="mailto:TheHollandSeven@gmail.com" class="text-indigo-600 font-bold hover:underline">TheHollandSeven@gmail.com</a>.</li>
+                    </ol>
                 </div>
             </section>
         </div>
