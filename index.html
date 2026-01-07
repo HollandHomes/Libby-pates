@@ -3,326 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dual Bathroom Renovation Proposal</title>
+    <title>Renovation Proposal - Libby Pates</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .proposal-card {
+            background: white;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
         }
         canvas {
-            border: 1px solid #d1d5db;
+            border: 2px solid #e2e8f0;
             border-radius: 0.5rem;
-            background-color: #f9fafb;
+            background-color: #fdfdfd;
             cursor: crosshair;
             touch-action: none;
         }
-        .material-table th, .material-table td {
-            border: 1px solid #e5e7eb;
-            padding: 10px;
-            text-align: left;
-        }
         .material-table th {
-            background-color: #f3f4f6;
-            font-weight: 600;
+            background-color: #f1f5f9;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
         }
         @media print {
-            .addendum-start {
-                page-break-before: always;
-            }
-            .no-print {
-                display: none;
-            }
-            .container {
-                box-shadow: none;
-                padding: 0;
-            }
-            body {
-                background-color: white;
-            }
+            .no-print { display: none !important; }
+            body { background: white; padding: 0; }
+            .proposal-card { box-shadow: none; border: none; width: 100%; max-width: 100%; }
+            .page-break { page-break-before: always; }
         }
     </style>
 </head>
-<body class="p-4 sm:p-10">
+<body class="py-10 px-4">
 
-    <div id="proposal-content" class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-6 sm:p-10">
-        
-        <!-- Header -->
-        <header class="text-center mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Holland Family Home Services, Inc.</h1>
-            <p class="text-md sm:text-lg text-gray-600 mt-2">70 Copper Head Trail, Murphy, NC | 828-541-2442 | TheHollandSeven@gmail.com</p>
-            <hr class="my-6 border-gray-300">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700 uppercase tracking-wide">Renovation Proposal: Dual Bathroom Walk-In Showers</h2>
+    <div class="max-w-4xl mx-auto proposal-card rounded-2xl overflow-hidden">
+        <!-- Header Section -->
+        <header class="bg-slate-900 text-white p-8 sm:p-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+                <div>
+                    <h1 class="text-3xl font-bold tracking-tight">Holland Family Home Services, Inc.</h1>
+                    <p class="text-slate-400 mt-2">70 Copper Head Trail, Murphy, NC 28906</p>
+                    <p class="text-slate-400">828-541-2442 | TheHollandSeven@gmail.com</p>
+                </div>
+                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                    <p class="text-xs uppercase font-bold text-slate-500">Proposal ID</p>
+                    <p class="text-xl font-mono">#2026-002-LP</p>
+                </div>
+            </div>
         </header>
 
-        <!-- Project Overview -->
-        <section class="prose max-w-none text-gray-700">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="p-8 sm:p-12">
+            <!-- Client Info -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 pb-8 border-b border-slate-100">
                 <div>
-                    <p class="mb-1"><strong>Client Name:</strong> <span class="border-b border-gray-300 px-2">Libby Pates</span></p>
-                    <p><strong>Project Address:</strong> <span class="border-b border-gray-300 px-2">168 Clay Durrett Rd, Murphy, NC 28906</span></p>
+                    <h3 class="text-sm uppercase font-bold text-slate-400 mb-2">Prepared For</h3>
+                    <p class="text-xl font-bold text-slate-800">Libby Pates</p>
+                    <p class="text-slate-600">168 Clay Durrett Rd</p>
+                    <p class="text-slate-600">Murphy, NC 28906</p>
                 </div>
                 <div class="md:text-right">
-                    <p><strong>Date:</strong> 2026-01-07</p>
-                    <p><strong>Proposal ID:</strong> #2026-002-DB</p>
+                    <h3 class="text-sm uppercase font-bold text-slate-400 mb-2">Project Date</h3>
+                    <p class="text-lg font-semibold text-slate-800">January 7, 2026</p>
+                    <p class="text-slate-500 italic mt-1 text-sm">Valid for 30 Days</p>
                 </div>
             </div>
 
-            <h3 class="text-xl font-bold text-gray-800 border-b-2 border-indigo-100 pb-2 mb-4">Project Objective</h3>
-            <p class="mb-4">This proposal provides options for the conversion of one or two bathrooms into modern, accessible walk-in shower suites. Each installation features a <strong>32" x 60" x 72"</strong> enclosure with integrated safety grab bars.</p>
-            
-            <div class="p-4 bg-amber-50 border-l-4 border-amber-500 rounded-md mb-8">
-                <p class="text-sm text-amber-900 font-medium italic">
-                    <strong>Customization Options:</strong> You may choose to include or exclude the glass shower door for each unit. If excluded, the shower will be prepared for a curtain (provided by client), and the final price is reduced accordingly.
+            <!-- Scope Introduction -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-indigo-600 pl-4">Project Objective</h2>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    This proposal outlines the conversion of existing bathroom fixtures into accessible, modern <strong>32" x 60" x 72"</strong> walk-in shower suites. Each configuration is designed for maximum safety with integrated grab bars and high-quality plumbing fixtures.
                 </p>
-            </div>
-        </section>
+                <div class="bg-indigo-50 p-4 rounded-xl border border-indigo-100">
+                    <p class="text-indigo-800 text-sm">
+                        <strong>Interactive Options:</strong> This is a modular proposal. You can choose to proceed with one or both bathrooms. You may also toggle the <strong>Glass Shower Door</strong> upgrade for each unit. Prices update automatically.
+                    </p>
+                </div>
+            </section>
 
-        <!-- Interactive Pricing Section -->
-        <h3 class="text-xl font-bold text-gray-800 mb-4">Select Project Options:</h3>
-        <div class="space-y-6">
-            
-            <!-- OPTION 1: UPPER FLOOR -->
-            <div class="p-6 border-2 border-gray-200 rounded-xl hover:border-indigo-300 transition-colors bg-white shadow-sm project-card" data-base="4189.71">
-                <div class="flex items-start">
-                    <input type="checkbox" id="check-upper" class="project-checkbox mt-1 h-7 w-7 text-indigo-600 rounded focus:ring-indigo-500 border-gray-300" checked>
-                    <div class="ml-4 flex-1">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-xl font-bold text-gray-900">1. Upper Floor (Framed Construction)</span>
-                            <span id="upper-price-display" class="text-2xl font-bold text-green-700">$4,189.71</span>
+            <!-- Interactive Selection Cards -->
+            <div class="space-y-6 mb-12">
+                
+                <!-- UPPER FLOOR CARD -->
+                <div class="group relative border-2 border-slate-200 rounded-2xl p-6 transition-all hover:border-indigo-400 hover:shadow-md bg-white">
+                    <label class="flex items-start cursor-pointer">
+                        <input type="checkbox" id="check-upper" class="project-checkbox mt-1.5 h-6 w-6 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500" checked>
+                        <div class="ml-6 flex-1">
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                                <h3 class="text-xl font-bold text-slate-800">1. Upper Floor (Framed Construction)</h3>
+                                <span id="upper-price-display" class="text-2xl font-black text-indigo-700">$0.00</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                Complete removal of existing tub. Installation of 32x60 walk-in shower on framed floor. Includes plumbing relocation, pressure-balanced valve ($250 allowance), and two (2) ADA grab bars.
+                            </p>
+                            
+                            <!-- Upgrade Toggle -->
+                            <div class="inline-flex items-center bg-slate-100 p-3 rounded-lg border border-slate-200">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="checkbox" id="door-upper" class="door-checkbox h-5 w-5 text-indigo-600 rounded border-slate-300" data-addon="607.05">
+                                    <span class="ml-3 text-sm font-semibold text-slate-700">Include Glass Shower Door Upgrade (+$607.05)</span>
+                                </label>
+                            </div>
                         </div>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                            <strong>Scope:</strong> Demolition of existing fixture. Installation of 32x60 shower kit on wood-framed floor. Includes plumbing relocation, valve ($250 allowance), and (2) grab bars.
-                        </p>
-                        
-                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-200 inline-block">
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" id="door-upper" class="door-checkbox h-5 w-5 text-indigo-500 rounded border-gray-300" data-addon="637.40">
-                                <span class="ml-2 text-sm font-semibold text-gray-700">Add Glass Shower Door Upgrade (+$637.40)</span>
-                            </label>
-                            <p class="text-[10px] text-gray-500 mt-1 ml-7">Includes $315 door + tax + additional labor for installation.</p>
+                    </label>
+                </div>
+
+                <!-- LOWER FLOOR CARD -->
+                <div class="group relative border-2 border-slate-200 rounded-2xl p-6 transition-all hover:border-indigo-400 hover:shadow-md bg-white">
+                    <label class="flex items-start cursor-pointer">
+                        <input type="checkbox" id="check-lower" class="project-checkbox mt-1.5 h-6 w-6 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                        <div class="ml-6 flex-1">
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                                <h3 class="text-xl font-bold text-slate-800">2. Lower Floor (Slab Construction)</h3>
+                                <span id="lower-price-display" class="text-2xl font-black text-indigo-700">$0.00</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                Specialized slab-on-grade installation. Includes concrete slab penetration, jackhammering for drain relocation, concrete restoration, and moisture barrier. Includes two (2) ADA grab bars.
+                            </p>
+                            
+                            <!-- Upgrade Toggle -->
+                            <div class="inline-flex items-center bg-slate-100 p-3 rounded-lg border border-slate-200">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="checkbox" id="door-lower" class="door-checkbox h-5 w-5 text-indigo-600 rounded border-slate-300" data-addon="607.05">
+                                    <span class="ml-3 text-sm font-semibold text-slate-700">Include Glass Shower Door Upgrade (+$607.05)</span>
+                                </label>
+                            </div>
                         </div>
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- Grand Total Bar -->
+            <div class="bg-slate-900 rounded-2xl p-8 mb-16 shadow-lg flex flex-col md:flex-row justify-between items-center text-white border border-slate-800">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <h4 class="text-indigo-400 uppercase tracking-widest font-bold text-xs mb-1">Guaranteed Maximum Price</h4>
+                    <p class="text-sm text-slate-400">Fixed-price contract including all labor, materials, and tax.</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <span id="grand-total" class="text-5xl font-black tracking-tight">$0.00</span>
+                </div>
+            </div>
+
+            <!-- Terms & Conditions -->
+            <section class="mb-16">
+                <h3 class="text-lg font-bold text-slate-800 mb-6 border-b border-slate-200 pb-2">Terms & Conditions</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm text-slate-600">
+                    <div class="flex gap-3">
+                        <span class="text-indigo-600 font-bold">•</span>
+                        <p><strong>Payment:</strong> 50% deposit required to secure schedule. Balance due upon substantial completion.</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="text-indigo-600 font-bold">•</span>
+                        <p><strong>Warranty:</strong> 1-year limited labor warranty. Manufacturers' warranties apply to all fixtures.</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="text-indigo-600 font-bold">•</span>
+                        <p><strong>Drywall:</strong> Includes patching and mudding to paint-ready status. Final painting is excluded.</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="text-indigo-600 font-bold">•</span>
+                        <p><strong>Exclusions:</strong> Structural rot repair, electrical upgrades, or remediation of pre-existing sub-code conditions.</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="text-indigo-600 font-bold">•</span>
+                        <p><strong>Curtain Option:</strong> If glass door is not selected, contractor will install a standard curtain rod; client provides curtain/rings.</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="text-indigo-600 font-bold">•</span>
+                        <p><strong>Dump Fee:</strong> Proposal includes all disposal and recycling fees for project-related debris.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- OPTION 2: LOWER FLOOR -->
-            <div class="p-6 border-2 border-gray-200 rounded-xl hover:border-indigo-300 transition-colors bg-white shadow-sm project-card" data-base="5370.96">
-                <div class="flex items-start">
-                    <input type="checkbox" id="check-lower" class="project-checkbox mt-1 h-7 w-7 text-indigo-600 rounded focus:ring-indigo-500 border-gray-300">
-                    <div class="ml-4 flex-1">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-xl font-bold text-gray-900">2. Lower Floor (Slab Construction)</span>
-                            <span id="lower-price-display" class="text-2xl font-bold text-green-700">$5,370.96</span>
-                        </div>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                            <strong>Scope:</strong> Specialized installation involving concrete slab penetration, jackhammering for drain relocation, and moisture-resistant barrier installation. Includes (2) grab bars.
-                        </p>
-
-                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-200 inline-block">
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" id="door-lower" class="door-checkbox h-5 w-5 text-indigo-500 rounded border-gray-300" data-addon="637.40">
-                                <span class="ml-2 text-sm font-semibold text-gray-700">Add Glass Shower Door Upgrade (+$637.40)</span>
-                            </label>
-                            <p class="text-[10px] text-gray-500 mt-1 ml-7">Includes $315 door + tax + additional labor for installation.</p>
+            <!-- Acceptance Signatures -->
+            <section class="mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-xs uppercase font-bold text-slate-400 mb-4 tracking-widest">Client Acceptance Signature</h4>
+                        <canvas id="sig-pad" width="400" height="140" class="w-full"></canvas>
+                        <div class="mt-3 flex justify-between">
+                            <button onclick="clearSig()" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors no-print">Clear Signature</button>
+                            <span class="text-[10px] text-slate-400 italic">Sign with mouse or finger</span>
                         </div>
                     </div>
+                    <div class="flex flex-col justify-end">
+                        <div class="border-b-2 border-slate-200 pb-2 mb-6 text-slate-400 italic text-sm">Libby Pates - Print Name</div>
+                        <div class="border-b-2 border-slate-200 pb-2 text-slate-400 italic text-sm">Date Signed</div>
+                    </div>
                 </div>
-            </div>
-
+            </section>
         </div>
 
-        <!-- Total Price Display -->
-        <div class="mt-10 p-8 bg-indigo-900 rounded-xl shadow-lg flex flex-col sm:flex-row justify-between items-center text-white">
-            <div class="mb-4 sm:mb-0">
-                <h4 class="text-lg font-semibold text-indigo-200 uppercase tracking-widest text-center sm:text-left">Total Project Estimate (GMP)</h4>
-                <p class="text-xs text-indigo-300 mt-1 italic text-center sm:text-left">*Includes all materials, labor, tax, management, and disposal.</p>
-            </div>
-            <div class="text-center sm:text-right">
-                <span id="total-price-display" class="text-5xl font-black">$0.00</span>
-            </div>
-        </div>
-
-        <!-- General Terms -->
-        <section class="mt-12 prose max-w-none text-gray-700">
-            <h3 class="text-xl font-bold text-gray-800">Terms & Conditions</h3>
-            <ul class="text-sm space-y-2 text-gray-600">
-                <li><strong>Payment Schedule:</strong> 50% deposit required to order materials and schedule start date. Remaining 50% due upon completion.</li>
-                <li><strong>Shower Curtain:</strong> If glass door option is not selected, contractor will install a standard curtain rod; curtain and rings provided by client.</li>
-                <li><strong>Warranty:</strong> 1-year labor warranty on all installations. Manufacturer warranty applies to all fixtures.</li>
-                <li><strong>Exclusions:</strong> Structural floor rot discovery, electrical modifications, and painting of drywalled areas outside the shower footprint.</li>
-            </ul>
-        </section>
-
-        <!-- Acceptance -->
-        <div class="mt-12 border-t pt-8">
-            <h3 class="text-xl font-bold text-gray-800 mb-6">Proposal Acceptance</h3>
-            <div class="grid sm:grid-cols-2 gap-8">
-                <div>
-                    <label class="block text-xs font-bold text-gray-500 uppercase">Authorized Signature</label>
-                    <canvas id="sig-canvas" width="400" height="120" class="w-full mt-2"></canvas>
-                    <button type="button" onclick="clearSig()" class="mt-2 text-xs text-indigo-600 font-bold hover:underline">Clear Signature</button>
-                </div>
-                <div class="flex flex-col justify-end">
-                    <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Print Name & Date</label>
-                    <div class="border-b-2 border-gray-300 py-2 text-gray-400 italic text-sm">Signer's Name</div>
-                    <div class="border-b-2 border-gray-300 py-2 mt-4 text-gray-400 italic text-sm">MM / DD / YYYY</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Material Addendum -->
-        <div id="addendum" class="addendum-start mt-16 pt-10 border-t-4 border-double border-gray-200">
-            <h3 class="text-2xl font-bold text-gray-800 text-center mb-6">Material & Fees Addendum</h3>
-            <p class="text-center text-gray-500 text-sm mb-8 italic">The following represents the calculated material allowances per bathroom based on your current selections.</p>
+        <!-- Addendum (Dynamic) -->
+        <div id="material-addendum" class="bg-slate-50 p-8 sm:p-12 border-t border-slate-200 page-break">
+            <h3 class="text-xl font-bold text-slate-800 mb-2">Material Allowance Addendum</h3>
+            <p class="text-sm text-slate-500 mb-8">Calculated per-unit allowances included in the Guaranteed Maximum Price.</p>
             
-            <table class="material-table w-full text-sm">
+            <table class="material-table w-full border-collapse rounded-xl overflow-hidden shadow-sm bg-white">
                 <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Item Description</th>
-                        <th class="text-right">Allowance</th>
+                    <tr class="text-slate-500">
+                        <th class="p-4 text-left border-b border-slate-200">Category</th>
+                        <th class="p-4 text-left border-b border-slate-200">Item Description</th>
+                        <th class="p-4 text-right border-b border-slate-200">Allowance</th>
                     </tr>
                 </thead>
-                <tbody id="addendum-body">
-                    <tr id="addendum-door-row" class="hidden">
-                        <td class="font-bold text-indigo-700">UPGRADE</td>
-                        <td class="font-bold text-indigo-700 italic">Glass Shower Door (Optional Upgrade)</td>
-                        <td class="text-right font-bold text-indigo-700">$315.00</td>
+                <tbody id="addendum-rows">
+                    <!-- Door row dynamically toggled -->
+                    <tr id="row-door" class="hidden text-indigo-700 bg-indigo-50/30">
+                        <td class="p-4 border-b border-slate-100 font-bold">UPGRADE</td>
+                        <td class="p-4 border-b border-slate-100 font-medium">Glass Shower Door (315.00 + tax + labor)</td>
+                        <td class="p-4 border-b border-slate-100 text-right font-mono font-bold">$315.00</td>
                     </tr>
-                    <tr>
-                        <td class="font-bold">Fixtures</td>
-                        <td>Shower Surround Allowance</td>
-                        <td class="text-right">$500.00</td>
+                    <tr class="text-slate-700">
+                        <td class="p-4 border-b border-slate-100 font-bold">Surround</td>
+                        <td class="p-4 border-b border-slate-100">3-Piece High-Gloss Wall System</td>
+                        <td class="text-right p-4 border-b border-slate-100 font-mono font-medium">$500.00</td>
                     </tr>
-                    <tr>
-                        <td class="font-bold">Fixtures</td>
-                        <td>Shower Floor Allowance</td>
-                        <td class="text-right">$300.00</td>
+                    <tr class="text-slate-700">
+                        <td class="p-4 border-b border-slate-100 font-bold">Floor</td>
+                        <td class="p-4 border-b border-slate-100">Low-Profile Reinforced Shower Pan</td>
+                        <td class="text-right p-4 border-b border-slate-100 font-mono font-medium">$300.00</td>
                     </tr>
-                    <tr>
-                        <td class="font-bold">Safety</td>
-                        <td>(2) 24" Stainless Steel ADA Grab Bars w/ Anchors</td>
-                        <td class="text-right">$145.00</td>
+                    <tr class="text-slate-700">
+                        <td class="p-4 border-b border-slate-100 font-bold">Safety</td>
+                        <td class="p-4 border-b border-slate-100">(2) 24" Stainless Steel ADA Grab Bars</td>
+                        <td class="text-right p-4 border-b border-slate-100 font-mono font-medium">$145.00</td>
                     </tr>
-                    <tr>
-                        <td class="font-bold">Plumbing</td>
-                        <td>Valve ($250), Misc PVC/CPVC ($75), Drain Kit ($20)</td>
-                        <td class="text-right">$345.00</td>
+                    <tr class="text-slate-700">
+                        <td class="p-4 border-b border-slate-100 font-bold">Plumbing</td>
+                        <td class="p-4 border-b border-slate-100">Valve ($250), Misc PVC ($75), Drain ($20)</td>
+                        <td class="text-right p-4 border-b border-slate-100 font-mono font-medium">$345.00</td>
                     </tr>
-                    <tr>
-                        <td class="font-bold">Install Supplies</td>
-                        <td>Mortar bed, Silicone, Fasteners, etc.</td>
-                        <td class="text-right">$70.00</td>
+                    <tr class="text-slate-700">
+                        <td class="p-4 border-b border-slate-100 font-bold">Rough-In</td>
+                        <td class="p-4 border-b border-slate-100">Mortar Bed, Silicone, Sealants, Fasteners</td>
+                        <td class="text-right p-4 border-b border-slate-100 font-mono font-medium">$70.00</td>
                     </tr>
-                    <tr>
-                        <td class="font-bold">Administrative</td>
-                        <td>Sales Tax (7% on materials) & Delivery/Disposal Fee</td>
-                        <td id="addendum-admin-val" class="text-right">$220.20</td>
+                    <tr class="text-slate-700">
+                        <td class="p-4 border-b border-slate-100 font-bold">Admin</td>
+                        <td class="p-4 border-b border-slate-100">Sales Tax (7%) & Project Disposal/Debris Fee</td>
+                        <td id="admin-val" class="text-right p-4 border-b border-slate-100 font-mono font-medium">$220.20</td>
                     </tr>
                 </tbody>
                 <tfoot>
-                    <tr class="bg-gray-50">
-                        <td colspan="2" class="text-right font-bold italic">Total Material Allowance (per selected unit):</td>
-                        <td id="addendum-total-val" class="text-right font-bold text-indigo-700">$1,580.20</td>
+                    <tr class="bg-indigo-900 text-white font-bold">
+                        <td colspan="2" class="p-4 text-right uppercase text-xs tracking-wider">Total Per Unit Material Allowance:</td>
+                        <td id="total-allowance-val" class="p-4 text-right font-mono">$1,580.20</td>
                     </tr>
                 </tfoot>
             </table>
-            <div class="mt-4 p-4 bg-gray-50 rounded text-xs text-gray-600 italic">
-                Note: The Guaranteed Maximum Price (GMP) listed in the selection cards includes the above material allowances plus all labor, management, and overhead.
+            <div class="mt-6 flex justify-center no-print">
+                <button onclick="window.print()" class="bg-indigo-600 text-white font-bold px-10 py-4 rounded-full shadow-lg hover:bg-indigo-700 transform transition hover:-translate-y-1">
+                    Download PDF / Print Proposal
+                </button>
             </div>
         </div>
-
-        <div class="mt-12 no-print flex justify-center">
-            <button onclick="window.print()" class="bg-indigo-600 text-white px-10 py-4 rounded-full font-bold shadow-xl hover:bg-indigo-700 transform hover:-translate-y-1 transition-all">
-                Download / Print Proposal
-            </button>
-        </div>
-
     </div>
 
     <script>
-        // --- Pricing Logic ---
-        const projectChecks = document.querySelectorAll('.project-checkbox');
-        const doorChecks = document.querySelectorAll('.door-checkbox');
-        const priceDisplay = document.getElementById('total-price-display');
+        // Pricing Logic
+        const checkUpper = document.getElementById('check-upper');
+        const checkLower = document.getElementById('check-lower');
+        const doorUpper = document.getElementById('door-upper');
+        const doorLower = document.getElementById('door-lower');
         
-        // Addendum Elements
-        const addendumDoorRow = document.getElementById('addendum-door-row');
-        const addendumAdminVal = document.getElementById('addendum-admin-val');
-        const addendumTotalVal = document.getElementById('addendum-total-val');
+        const upperPriceDisplay = document.getElementById('upper-price-display');
+        const lowerPriceDisplay = document.getElementById('lower-price-display');
+        const grandTotalDisplay = document.getElementById('grand-total');
+        
+        const rowDoor = document.getElementById('row-door');
+        const adminVal = document.getElementById('admin-val');
+        const allowanceVal = document.getElementById('total-allowance-val');
 
-        function formatCurrency(num) {
-            return new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-            }).format(num);
+        const BASE_UPPER = 3990.20;
+        const BASE_LOWER = 5115.20;
+        const DOOR_ADDON = 607.05;
+
+        function format(num) {
+            return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(num);
         }
 
-        function calculateTotal() {
-            let totalProject = 0;
-            let anyDoorSelected = false;
+        function update() {
+            let upper = BASE_UPPER + (doorUpper.checked ? DOOR_ADDON : 0);
+            let lower = BASE_LOWER + (doorLower.checked ? DOOR_ADDON : 0);
+            
+            upperPriceDisplay.innerText = format(upper);
+            lowerPriceDisplay.innerText = format(lower);
+            
+            let total = 0;
+            if (checkUpper.checked) total += upper;
+            if (checkLower.checked) total += lower;
+            
+            grandTotalDisplay.innerText = format(total);
 
-            // Update individual card displays and calculate grand total
-            projectChecks.forEach((cb, index) => {
-                const card = cb.closest('.project-card');
-                const basePrice = parseFloat(card.dataset.base);
-                const doorCb = card.querySelector('.door-checkbox');
-                const doorAddon = parseFloat(doorCb.dataset.addon);
-                const display = card.querySelector('span[id$="-price-display"]');
-                
-                let cardCurrentPrice = basePrice;
-                if (doorCb.checked) {
-                    cardCurrentPrice += doorAddon;
-                    anyDoorSelected = true;
-                }
-
-                display.innerText = formatCurrency(cardCurrentPrice);
-
-                if (cb.checked) {
-                    totalProject += cardCurrentPrice;
-                }
-            });
-
-            priceDisplay.innerText = formatCurrency(totalProject);
-
-            // Update Addendum Table
-            if (anyDoorSelected) {
-                addendumDoorRow.classList.remove('hidden');
-                addendumAdminVal.innerText = formatCurrency(242.25);
-                addendumTotalVal.innerText = formatCurrency(1917.25);
+            // Update Addendum
+            if (doorUpper.checked || doorLower.checked) {
+                rowDoor.classList.remove('hidden');
+                adminVal.innerText = format(242.25);
+                allowanceVal.innerText = format(1917.25);
             } else {
-                addendumDoorRow.classList.add('hidden');
-                addendumAdminVal.innerText = formatCurrency(220.20);
-                addendumTotalVal.innerText = formatCurrency(1580.20);
+                rowDoor.classList.add('hidden');
+                adminVal.innerText = format(220.20);
+                allowanceVal.innerText = format(1580.20);
             }
         }
 
-        // Attach listeners
-        projectChecks.forEach(cb => cb.addEventListener('change', calculateTotal));
-        doorChecks.forEach(cb => cb.addEventListener('change', calculateTotal));
-        
-        // Initial calc
-        calculateTotal();
+        [checkUpper, checkLower, doorUpper, doorLower].forEach(el => el.addEventListener('change', update));
+        update();
 
-        // --- Signature Pad ---
-        const canvas = document.getElementById('sig-canvas');
+        // Signature Pad
+        const canvas = document.getElementById('sig-pad');
         const ctx = canvas.getContext('2d');
         let drawing = false;
-
-        ctx.strokeStyle = "#1e1b4b";
-        ctx.lineWidth = 2;
 
         function getPos(e) {
             const rect = canvas.getBoundingClientRect();
             const clientX = e.touches ? e.touches[0].clientX : e.clientX;
             const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-            return {
-                x: clientX - rect.left,
-                y: clientY - rect.top
-            };
+            return { x: clientX - rect.left, y: clientY - rect.top };
         }
 
         function start(e) {
@@ -337,25 +339,23 @@
             if (!drawing) return;
             const pos = getPos(e);
             ctx.lineTo(pos.x, pos.y);
+            ctx.strokeStyle = "#1e293b";
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
             ctx.stroke();
             e.preventDefault();
         }
 
-        function end() {
-            drawing = false;
-        }
+        function stop() { drawing = false; }
 
         canvas.addEventListener('mousedown', start);
         canvas.addEventListener('mousemove', move);
-        window.addEventListener('mouseup', end);
-
+        window.addEventListener('mouseup', stop);
         canvas.addEventListener('touchstart', start);
         canvas.addEventListener('touchmove', move);
-        canvas.addEventListener('touchend', end);
+        canvas.addEventListener('touchend', stop);
 
-        function clearSig() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-        }
+        function clearSig() { ctx.clearRect(0, 0, canvas.width, canvas.height); }
     </script>
 </body>
 </html>
